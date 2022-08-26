@@ -16,7 +16,7 @@ html {
 
 body {
   /* Declare your default font stack here */
-  font-family: "Font Stack", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   
   /* Better text rendering - font-smoothing has not been officially declared, but can still be useful */
   text-rendering: geometricPrecision;
