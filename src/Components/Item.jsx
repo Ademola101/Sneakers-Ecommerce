@@ -1,14 +1,18 @@
 import React from 'react';
+
 import { useSelector } from 'react-redux';
 
 export default function Item() {
 
-  const product = useSelector(state => state.product);
-  const firstimage = product[0].img;
+  const products = useSelector(state => state.products);
+  const displayImage = products.map(product => product.img);
+  const index = useSelector(state => state.index);
+
+
   return (
     <div>
 
-      <img src={firstimage} alt="" />
+      <img src={displayImage[index]} alt="sneakers" />
     </div>
   );
 }
