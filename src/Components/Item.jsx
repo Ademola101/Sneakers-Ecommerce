@@ -1,6 +1,8 @@
 import React from 'react';
-
+import { ItemStyle } from '../Styles/Item.style';
 import { useSelector } from 'react-redux';
+import NextLeft from './NextLeft';
+
 
 export default function Item() {
 
@@ -9,10 +11,15 @@ export default function Item() {
   const index = useSelector(state => state.index);
 
 
-  return (
-    <div>
+  return (<>
+    <ItemStyle>
 
-      <img src={displayImage[index]} alt="sneakers" />
-    </div>
+      <div className='image'>
+        <img src={displayImage[index]} alt="sneakers" />
+      </div>
+
+    </ItemStyle>
+    <NextLeft />
+  </>
   );
 }
