@@ -4,8 +4,14 @@ export const ItemStyle = styled.div`
 display: flex;
 flex-direction: row;
 
-.image {
+@media (min-width:768px) {
+  .image {
+  border-radius: 10px;
 }
+
+
+}
+
 
 
 `;

@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const CompanyStyle = styled.div`
 margin-left: 20px;
 margin-right: 20px;
+@media (min-width:768px) {
+margin-top: 100px;
+}
 
 .header{
   font-weight: bold;
@@ -26,6 +29,10 @@ margin-right: 20px;
 
 .price {
   display: flex;
+}
+
+@media (min-width:768px) {
+  margin-top: 20px;
 }
 
 `;

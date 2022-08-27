@@ -15,8 +15,8 @@ export default function Item() {
   return (<>
     <ItemStyle>
 
-      <div className='image'>
-        <img src={displayImage[index]} alt="sneakers" />
+      <div >
+        <img className='image' src={displayImage[index]} alt="sneakers" />
       </div>
 
     </ItemStyle>
