@@ -4,18 +4,16 @@ export const HeaderStyle = styled.header`
 display: flex;
 flex-direction: row;
 margin: 10px;
-.header {
+.sneakers {
   width: 65vw;
   font-size: 2em;
   display: flex;
   justify-content: left;
   padding-left: 30px;
+
   
 }
 
-.svg {
-  width:5vw
-}
 
 .profile {
   width: 5vw;
@@ -26,6 +24,29 @@ margin: 10px;
 }
 .cart {
   width: 10vw;
+}
+
+@media (min-width:768px) {
+  height: 60px;
+  border-bottom: 2px solid hsl(220deg 39% 87%);
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  .sneakers{
+    width: 20vw;
+    padding-left: 0;
+    font-size: 1.6em;
+  }
+
+  .svg {
+  display: none;
+  
+}
+.profile {
+  width: 3vw;
+}
+
 }
 
 `;
