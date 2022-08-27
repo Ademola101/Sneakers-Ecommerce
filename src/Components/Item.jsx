@@ -2,6 +2,7 @@ import React from 'react';
 import { ItemStyle } from '../Styles/Item.style';
 import { useSelector } from 'react-redux';
 import NextLeft from './NextLeft';
+import NextRight from './RightNext';
 
 
 export default function Item() {
@@ -20,6 +21,7 @@ export default function Item() {
 
     </ItemStyle>
     <NextLeft />
+    <NextRight/>
   </>
   );
 }

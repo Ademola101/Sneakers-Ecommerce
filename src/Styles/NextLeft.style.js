@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const NextStyleLeft = styled.div`
+display: ${props => props.display  };
 
 position: relative;
     left: 40px;
