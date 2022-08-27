@@ -3,6 +3,7 @@ import { ItemStyle } from '../Styles/Item.style';
 import { useSelector } from 'react-redux';
 import NextLeft from './NextLeft';
 import NextRight from './RightNext';
+import Thumbnail from './Thumbnail';
 
 
 export default function Item() {
@@ -18,10 +19,11 @@ export default function Item() {
       <div >
         <img className='image' src={displayImage[index]} alt="sneakers" />
       </div>
-
+      <Thumbnail />
     </ItemStyle>
     <NextLeft />
     <NextRight/>
+
   </>
   );
 }
