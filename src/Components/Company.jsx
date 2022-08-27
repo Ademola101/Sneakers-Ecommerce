@@ -1,5 +1,6 @@
 import React from 'react';
 import { CompanyStyle } from '../Styles/Company.style';
+import Price from './Price';
 
 
 export default function Company() {
@@ -21,6 +22,8 @@ export default function Company() {
         </strong>
 
       </div>
+
+      <Price />
 
 
     </CompanyStyle>

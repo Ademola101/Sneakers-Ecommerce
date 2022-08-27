@@ -21,8 +21,11 @@ margin-right: 20px;
 
 .text {
   color: hsl(220, 14%, 75%);
+  font-size: 16px;
 }
 
-
+.price {
+  display: flex;
+}
 
 `;
