@@ -1,16 +1,23 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { ThumbnailStyle } from '../Styles/Thumbnail.style';
+import { showPicture } from '../reducers/ProductIndex';
 
 export default function Thumbnail() {
   const products = useSelector(state => state.products);
-  const thumbnails = products.map(product => product.thumbnail);
 
+
+  const dispatch = useDispatch();
+  const handleShowPicture = (index) => {
+    dispatch(showPicture(index));
+
+
+  };
 
   return (
     <ThumbnailStyle>
-      {thumbnails.map(thumbnail => <img className='img' src={thumbnail} key = {thumbnail.id} alt="sneakers" />)}
-
+      {products.map(product => <img onClick={() => handleShowPicture(product.id)} className='img'
+        src={product.thumbnail} key = {product.id} alt="sneakers" />)}
     </ThumbnailStyle>
   );
 }

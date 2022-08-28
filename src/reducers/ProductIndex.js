@@ -9,6 +9,11 @@ const ProductIndex = createSlice({
     },
     moveleft: (state) => {
       return state = state - 1;
+    },
+
+    showPicture: (state, action) => {
+      const payload = action.payload;
+      return payload-1;
     }
 
   }
@@ -18,4 +23,4 @@ const ProductIndex = createSlice({
 
 export default ProductIndex.reducer;
 
-export const { moveright, moveleft } = ProductIndex.actions;
+export const { moveright, moveleft, showPicture } = ProductIndex.actions;
