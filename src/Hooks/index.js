@@ -3,16 +3,16 @@ export function useMediaQuery(query) {
   const [matches, setMatches] = useState(false);
 
   useEffect(() => {
-    const matchQueryList = window.matchMedia(query);
-    function handleChange(e) {
-      setMatches(e.matches);
+    const media = window.matchMedia(query);
+    if (media.matches !== matches) {
+      setMatches(media.matches);
     }
-    matchQueryList.addEventListener('change', handleChange);
-
-    return () => {
-      matchQueryList.removeEventListener('change', handleChange);
+    const listener = () => {
+      setMatches(media.matches);
     };
-  }, [query]);
+    media.addListener(listener);
+    return () => media.removeListener(listener);
+  }, [matches, query]);
 
   return matches;
 }
