@@ -1,0 +1,22 @@
+
+
+.Modal{
+  display: none;
+  
+}
+
+.Overlay{
+  display: none;
+  
+}
+
+
+@media (min-width:768px) {
+  .Modal{
+    display: block;
+
+  }
+  .Overlay{
+    display: block;
+  }
+}

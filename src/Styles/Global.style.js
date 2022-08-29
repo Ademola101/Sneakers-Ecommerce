@@ -43,14 +43,14 @@ a, button {
 
 svg {
   /* Make the SVGs fit the parent container by default */
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
   
   /* Optional - make the SVG's fill be the same as the inherited color */
-  fill: currentColor;
+  /* fill: currentColor; */
   
   /* Prevent the SVG from altering cursor interaction */
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 

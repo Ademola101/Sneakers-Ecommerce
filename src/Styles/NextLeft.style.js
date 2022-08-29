@@ -14,7 +14,7 @@ position: relative;
 
 
 svg {
-  left: 10px;
+    left: 10px;
     position: relative;
     top: 8px;
 }
