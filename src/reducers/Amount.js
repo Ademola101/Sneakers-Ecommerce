@@ -7,7 +7,11 @@ const Amount = createSlice({
   reducers: {
 
     increaseAmount: (state) => {
-      return state = state ++;
+      return state = state + 1;
+    },
+
+    decreaseAmount: (state) => {
+      return state = state -1;
     }
   }
 
@@ -15,4 +19,4 @@ const Amount = createSlice({
 
 export default Amount.reducer;
 
-export const { increaseAmount } = Amount.actions;
+export const { increaseAmount, decreaseAmount } = Amount.actions;

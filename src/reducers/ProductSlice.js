@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = [
   { id: 1,
-    name: 'product1',
+    name: 'Full Limited Edition Sneaker',
     thumbnail: '/product-image/image-product-1-thumbnail.jpg',
     img: '/product-image/image-product-1.jpg',
   },

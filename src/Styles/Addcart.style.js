@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const AddCartStyle = styled.div`
+export const AddCartStyle = styled.button`
+border: none;
+
 
 
 
@@ -10,7 +12,9 @@ export const AddCartStyle = styled.div`
     right: 280px;
     width: 100%;
     min-width: 180px;
-
+    &:hover {
+      background-color: brown;
+    }
 
     }
 

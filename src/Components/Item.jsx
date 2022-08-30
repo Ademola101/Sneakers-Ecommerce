@@ -22,7 +22,6 @@ export default function Item() {
   const index = useSelector(state => state.index);
   const handleClose = () => {
     setisOpen(false);
-    console.log(isOpen);
   };
 
 

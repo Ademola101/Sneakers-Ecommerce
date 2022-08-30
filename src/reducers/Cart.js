@@ -1,23 +1,24 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { store } from '../store';
-
 const CartSlice = createSlice({
-  initialState: {
-
-  },
+  initialState: [],
   name: 'cart',
   reducers: {
-    addCart:(state, payload) => {
-      const index = payload;
 
-      const products = store.getState().products;
-      const product = products.find(product => product.id === index);
-      return state = state.name.push(product);
+    addToCart: (state, action) => {
+
+      if (state.some(arr => arr?.id=== action.payload.id)) {
+        return state;
+      }
+
+      return state = state.concat(action.payload);
 
     }
 
-  } }
+
+  }
+
+}
 
 );
 
