@@ -6,6 +6,7 @@ import NextRight from './RightNext';
 import Thumbnail from './Thumbnail';
 import Modal from './Modal';
 import { useMediaQuery } from '../Hooks';
+import SelectedProduct from './SelectedProduct';
 
 
 export default function Item() {
@@ -40,6 +41,7 @@ export default function Item() {
     </ItemStyle>
     <NextLeft />
     <NextRight/>
+    <SelectedProduct />
     <Modal isOpen={isOpen} handleClose = {handleClose}/>
   </>
   );
