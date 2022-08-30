@@ -15,7 +15,7 @@ export default function SelectedProduct() {
 
       <div className='cartcontent'>
 
-        {cartname ? ` ${cartname } $ ${125.00} * 3 ${125 * amount}` :'Your cart is empty'}
+        {cartname ? ` ${cartname } $ ${125.00} * ${amount} ${125 * amount}` :'Your cart is empty'}
 
 
 

@@ -4,6 +4,17 @@ export const HeaderStyle = styled.header`
 display: flex;
 flex-direction: row;
 margin: 10px;
+.amount {
+  color: white;
+  background-color: hsl(26, 100%, 55%);
+  width: 20px;
+  font-size: small;
+  position: relative;
+  bottom: 34px;
+  text-align: center;
+  left: 8px;
+  border-radius: 50%;
+}
 .sneakers {
   width: 65vw;
   font-size: 2em;
