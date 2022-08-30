@@ -13,8 +13,10 @@ export default function Item() {
   const isMobbile = useMediaQuery('(min-width: 768px)');
 
 
+
   const products = useSelector(state => state.products);
-  const displayImage = products.map(product => product.img);
+
+
   const index = useSelector(state => state.index);
   const handleClose = () => {
     setisOpen(false);
@@ -31,7 +33,8 @@ export default function Item() {
 
         isMobbile && setisOpen(true);}
       } >
-        <img className='image'  src={displayImage[index]} alt="" />
+        <img className='image'  src={products.find(
+          product => product.id === index+1)?.img} alt="sneakers" />
       </div>
       <Thumbnail />
     </ItemStyle>

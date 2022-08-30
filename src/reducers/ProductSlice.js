@@ -30,7 +30,9 @@ const Product = createSlice({
 
   initialState,
   name: 'products',
-  reducers: {  }
+  reducers: {
+
+  }
 
 });
 
