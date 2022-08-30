@@ -3,6 +3,7 @@ import Item from './Components/Item';
 import Company from './Components/Company';
 import { CompanytemResStyle } from './Styles/CompanyItemRes.style';
 import Quantity from './Components/Quantity';
+import AddCart from './Components/AddCart';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Item/>
         <Company/>
         <Quantity/>
+        <AddCart/>
 
       </CompanytemResStyle>
 
