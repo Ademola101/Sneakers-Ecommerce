@@ -11,7 +11,7 @@ export default function SelectedProduct() {
 
       <div className='cartcontent'>
 
-
+Your cart is empty
 
       </div>
     </SelectedProductStyle>
