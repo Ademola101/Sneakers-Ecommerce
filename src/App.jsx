@@ -4,11 +4,15 @@ import Company from './Components/Company';
 import { CompanytemResStyle } from './Styles/CompanyItemRes.style';
 import Quantity from './Components/Quantity';
 import AddCart from './Components/AddCart';
+import SelectedProduct from './Components/SelectedProduct';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const showCartState = useSelector(state => state.showCart);
   return (
     <div>
       <Header />
+
       <CompanytemResStyle>
         <Item/>
         <Company/>
@@ -16,7 +20,7 @@ function App() {
         <AddCart/>
 
       </CompanytemResStyle>
-
+      {showCartState && <SelectedProduct />}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { QuantityStyle } from '../Styles/Quntity.style';
+import { QuantityStyle } from '../Styles/Quantity.style';
 const Quantity = () => {
   return (
     <QuantityStyle>
