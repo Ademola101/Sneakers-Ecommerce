@@ -6,10 +6,11 @@ export default function SelectedProduct() {
     <SelectedProductStyle>
 
       <div className='header'>
-Cart
+        Cart
       </div>
 
-      <div className='amount'>
+      <div className='cartcontent'>
+
 
 
       </div>
