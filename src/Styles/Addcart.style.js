@@ -2,6 +2,18 @@ import styled from 'styled-components';
 
 export const AddCartStyle = styled.div`
 
+
+
+    @media (min-width:768px) {
+    position: relative;
+    top: 350px;
+    right: 280px;
+    width: 100%;
+    min-width: 180px;
+
+
+    }
+
 display: flex;
 justify-content: center;
 background-color:  hsl(26, 100%, 55%);

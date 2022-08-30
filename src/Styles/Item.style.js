@@ -9,6 +9,9 @@ flex-direction: row;
   .image {
   border-radius: 10px;
   width: 400px;
+  &:hover {
+    background-color: red;
+  }
   
 }
 width: 700px;

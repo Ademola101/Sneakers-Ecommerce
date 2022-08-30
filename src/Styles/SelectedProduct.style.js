@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 export const SelectedProductStyle = styled.div`
 
-@media (min-width:768px) {
-
-}
-
 background-color: white;
 height: 300px;
 width: 345px;
@@ -31,4 +27,18 @@ bottom: 800px;
   font-size: 1.1em;
   white-space: nowrap;
 }
+
+@media (min-width:768px) {
+
+  left: 290px;
+  bottom: 720px;
+  width: 250px;
+  height: 200px;
+
+  .cartcontent{
+    padding: 40px;
+    font-size: 1em;
+  }
+}
+
 `;

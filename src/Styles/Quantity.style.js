@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const QuantityStyle = styled.div`
 @media (min-width:768px) {
-  display: none;
+  position: relative;
+    height: 20px;
+    top: 350px;
+    right: 300px;
 }
 
 display: flex;

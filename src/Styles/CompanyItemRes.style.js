@@ -6,6 +6,7 @@ export const CompanytemResStyle = styled.div`
 display: flex;
 flex-direction: row;
 margin: 100px;
+gap: 30px;
 }
 
 `;
