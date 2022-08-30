@@ -9,9 +9,11 @@ import { useMediaQuery } from '../Hooks';
 import SelectedProduct from './SelectedProduct';
 
 
+
 export default function Item() {
   const [isOpen, setisOpen] = useState(false);
   const isMobbile = useMediaQuery('(min-width: 768px)');
+  const showCartState = useSelector(state => state.showCart);
 
 
 
@@ -41,7 +43,7 @@ export default function Item() {
     </ItemStyle>
     <NextLeft />
     <NextRight/>
-    <SelectedProduct />
+    {showCartState && <SelectedProduct />}
     <Modal isOpen={isOpen} handleClose = {handleClose}/>
   </>
   );
