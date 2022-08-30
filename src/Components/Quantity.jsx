@@ -1,6 +1,9 @@
 import React from 'react';
 import { QuantityStyle } from '../Styles/Quantity.style';
+import { useSelector } from 'react-redux';
 const Quantity = () => {
+  const cartstate = useSelector(state => state.Cart);
+  console.log(cartstate);
   return (
     <QuantityStyle>
       <div>
