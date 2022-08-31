@@ -2,8 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const CartSlice = createSlice({
   initialState: {
-    name: null,
-    index: null
+    name: [],
+    index: []
   },
   name: 'cart',
   reducers: {
@@ -15,8 +15,8 @@ const CartSlice = createSlice({
       // }
 
       // return state = state.concat(cart.payload);
-      state.index = index;
-      state.name = cart;
+      state.index = [...state.index, index];
+      state.name = [...state.name, cart];
 
     }
 
