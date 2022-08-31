@@ -9,7 +9,7 @@ const AddCart = () => {
   const handleAddToCart = () => {
 
     if (amount > 0) {
-      dispatch(addToCart(product));
+      dispatch(addToCart({ cart: 'ade', index :12 }));
     }
 
   };

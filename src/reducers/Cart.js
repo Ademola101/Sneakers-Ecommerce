@@ -1,17 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const CartSlice = createSlice({
-  initialState: [],
+  initialState: {
+    name: null,
+    index: null
+  },
   name: 'cart',
   reducers: {
 
-    addToCart: (state, action) => {
+    addToCart: (state, { payload:{ cart, index } }) => {
 
-      if (state.some(arr => arr?.id=== action.payload.id)) {
-        return state;
-      }
+      // if (state.some(arr => arr?.id=== cart.id)) {
+      //   return state;
+      // }
 
-      return state = state.concat(action.payload);
+      // return state = state.concat(cart.payload);
+      state.index = index;
+      state.name = cart;
 
     }
 
