@@ -12,6 +12,11 @@ box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 border-radius: 10px;
 position: relative;
 bottom: 800px;
+overflow: auto;
+
+.mulresult {
+  color: black;
+}
 
 .header {
   font-weight: bold;
@@ -25,7 +30,6 @@ bottom: 800px;
   color: #87727299;
   font-weight: bold;
   font-size: 1.1em;
-  white-space: nowrap;
 }
 
 @media (min-width:768px) {
@@ -33,11 +37,25 @@ bottom: 800px;
   left: 290px;
   bottom: 720px;
   width: 250px;
-  height: 200px;
+  height: 250px;
 
   .cartcontent{
-    padding: 40px;
+    padding: 20px;
     font-size: 1em;
+  }
+
+  .checkout {
+    border: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:  hsl(26, 100%, 55%);
+    padding: 9px;
+    color: white;
+    font-size: small;
+    border-radius: 4px;
+    font-weight: 600;
   }
 }
 

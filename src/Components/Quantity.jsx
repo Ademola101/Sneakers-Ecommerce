@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { increaseAmount, decreaseAmount } from '../reducers/Amount';
 const Quantity = () => {
   const amount = useSelector(state => state.Amount);
-  console.log(amount);
   const dispatch = useDispatch();
   return (
     <QuantityStyle>
