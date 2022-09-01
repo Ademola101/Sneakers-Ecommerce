@@ -11,7 +11,7 @@ const AddCart = () => {
   const handleAddToCart = () => {
 
     if (amount > 0) {
-      dispatch(addToCart({ cart: product, index :amount }));
+      dispatch(addToCart({  product, amount }));
       dispatch(setToZero());
     }
 
