@@ -10,12 +10,9 @@ const CartSlice = createSlice({
       return [...state, productAmount];
 
     },
-
-
-
     removeFromCart: (state, { payload:{ product, amount } }) => {
       const productAmount = { product, amount };
-      state = state.filter(item => item !== productAmount);
+      return state = state.filter(item => item.id !== productAmount.id);
 
     },
 

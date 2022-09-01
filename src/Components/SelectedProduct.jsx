@@ -1,13 +1,14 @@
 import React from 'react';
 import { SelectedProductStyle } from '../Styles/SelectedProduct.style';
 import { useSelector, useDispatch } from 'react-redux';
+import SelectedProductExerpt from './SelectedProductExerpt';
 import { RiDeleteBinLine } from 'react-icons/ri';
 // import { removeFromCart } from '../reducers/Cart';
 
 
 export default function SelectedProduct() {
   const dispatch = useDispatch();
-  const productsInCart = useSelector(state => state.Cart);
+  const Cart = useSelector(state => state.Cart);
   // const products = useSelector(state => state.products);
   // const id = cart.name[0]?.id;
   // const product = products.find(product => product.id === id);
@@ -21,16 +22,11 @@ export default function SelectedProduct() {
       <div className='header'>
         Cart
 
-      </div>
-
-      <div>
-        {productsInCart.map(product =>  <div key={product.id}>
-
-          <div>
-            {JSON.stringify(product)}
-          </div>
+        <div>
+          {Cart.map(cart => <SelectedProductExerpt key={cart.product.id} product = {cart.product}/>)}
         </div>
-        )}
+
+
       </div>
     </SelectedProductStyle>
   );
