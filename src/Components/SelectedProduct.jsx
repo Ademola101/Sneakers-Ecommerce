@@ -21,13 +21,13 @@ export default function SelectedProduct() {
 
       <div className='header'>
         Cart
-
-        <div>
-          {Cart.map(cart => <SelectedProductExerpt key={cart.product.id} product = {cart.product}/>)}
-        </div>
-
-
       </div>
+      <div>
+        {Cart.map(cart => <SelectedProductExerpt key={cart.id} product = {cart}/>)}
+      </div>
+
+
+
     </SelectedProductStyle>
   );
 }
