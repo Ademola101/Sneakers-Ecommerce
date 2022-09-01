@@ -13,6 +13,8 @@ margin-top: 20px;
 
 
 
+
+
 img {
     display: inline;
     width: 50px;
@@ -26,6 +28,7 @@ img {
 .bold-result {
   font-weight: bold;
   color: black;
+  font-size: 0.8em;
 }
 
 .product-text {
@@ -33,7 +36,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.2em;
+  font-size: 0.8em;
   color: hsl(220,14%,75%);
 
 }
@@ -45,6 +48,11 @@ img {
 
 }
 
+@media (min-width: 768px) {
 
+  width: auto;
+  gap: 10px;
+  
+}
 
 `;

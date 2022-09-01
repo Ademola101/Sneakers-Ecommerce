@@ -29,11 +29,6 @@ overflow: auto;
 
 
 
-
-.mulresult {
-  color: black;
-}
-
 .header {
   font-weight: bold;
   font-size: 1.2em;
@@ -41,12 +36,6 @@ overflow: auto;
   padding: 30px;
 }
 
-.cartcontent{
-  padding: 20px;
-  color: #87727299;
-  font-weight: bold;
-  display: inline-block;
-}
 .checkout {
     border: none;
     width: 80%;
@@ -66,14 +55,16 @@ overflow: auto;
 
   left: 290px;
   bottom: 720px;
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 220px;
 
-  .cartcontent{
-    padding: 20px;
-    font-size: 1em;
-    padding: 100px;
+  .empty {
+    font-size: 0.8em;
+    font-weight: bolder;
+
   }
+}
+
 
   .checkout {
     border: none;
@@ -88,6 +79,6 @@ overflow: auto;
     border-radius: 4px;
     font-weight: 600;
   }
-}
+
 
 `;
