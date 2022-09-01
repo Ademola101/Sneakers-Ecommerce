@@ -1,7 +1,11 @@
 import React from 'react';
 import { NavigationStyle } from '../Styles/NavigationStyle';
 
-export default function Navigation() {
+export default function Navigation({ showLinks }) {
+
+  if (showLinks) {
+    return null;
+  }
   return (
     <NavigationStyle>
 

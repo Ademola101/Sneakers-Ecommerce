@@ -1,24 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HeaderStyle } from '../Styles/Header.style';
 import Navigation from './Navigation';
 import { showCart } from '../reducers/ShowCart';
 import { useDispatch, useSelector } from 'react-redux';
 
 export default function Header() {
+  const [showLinks, setshowLinks] = useState(false);
+
+  const handleShowLinks = () => {
+    setshowLinks(!showLinks);
+  };
+
 
 
   const dispatch = useDispatch();
   const Cart = useSelector(state => state.Cart);
   return (
     <HeaderStyle >
-      <div className='svg'>
-        <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+      <div className='svg' >
+        <svg onClick={handleShowLinks} width="16" height="15" xmlns="http://www.w3.org/2000/svg">
           <path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fillRule="evenodd"/></svg>
       </div>
       <div className='sneakers'><strong>sneakers</strong> </div>
 
 
-      <Navigation/>
+      <Navigation showLinks={showLinks}/>
 
 
       <div className='cart'>

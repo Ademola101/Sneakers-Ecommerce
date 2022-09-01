@@ -22,9 +22,19 @@ export default function SelectedProduct() {
         Cart
       </div>
 
-      { Cart.length > 0 ?
-        Cart.map(product => <SelectedProductExerpt key={product.id} product={product} deleteCart={() => handleDelete(product.id)} />)
-        : <div className='empty'>Your cart is empty</div>}
+
+      { Cart.length > 0 && ( <>
+        {Cart.map(product => <SelectedProductExerpt key={product.id} product={product}
+          deleteCart={() => handleDelete(product.id)}  />
+
+
+        ) }
+        <div className='checkout'>
+          Checkout
+        </div>
+      </>
+      ) }
+      { Cart.length === 0 && <div className='empty'>Your cart is empty</div>}
 
 
 
