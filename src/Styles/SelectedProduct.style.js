@@ -14,6 +14,20 @@ position: relative;
 bottom: 800px;
 overflow: auto;
 
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #0000009e;
+  text-shadow: 0 0 15px #6058581c;
+
+}
+
+
 
 
 .mulresult {

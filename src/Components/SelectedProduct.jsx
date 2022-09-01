@@ -6,6 +6,7 @@ import { removeFromCart } from '../reducers/Cart';
 
 export default function SelectedProduct() {
 
+
   const dispatch = useDispatch();
   const Cart = useSelector(state => state.Cart);
 
@@ -20,9 +21,10 @@ export default function SelectedProduct() {
       <div className='header'>
         Cart
       </div>
-      <div>
-        {Cart.map(cart => <SelectedProductExerpt key={cart.id} product = {cart} deleteCart = {() => handleDelete(cart.id)} />)}
-      </div>
+
+      { Cart.length > 0 ?
+        Cart.map(product => <SelectedProductExerpt key={product.id} product={product} deleteCart={() => handleDelete(product.id)} />)
+        : <div className='empty'>Your cart is empty</div>}
 
 
 

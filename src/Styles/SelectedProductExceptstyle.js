@@ -12,6 +12,7 @@ margin-top: 20px;
 
 
 
+
 img {
     display: inline;
     width: 50px;
@@ -19,8 +20,7 @@ img {
   }
 
   .icon {
-  
-
+    margin-top: 15px
 }
 
 .bold-result {
