@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderStyle = styled.header`
 display: flex;
 flex-direction: row;
-margin: 10px;
+margin: 15px;
 .amount {
   color: white;
   background-color: hsl(26, 100%, 55%);

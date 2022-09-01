@@ -12,13 +12,7 @@ import { useMediaQuery } from '../Hooks';
 export default function Item() {
   const [isOpen, setisOpen] = useState(false);
   const isMobbile = useMediaQuery('(min-width: 768px)');
-
-
-
-
   const products = useSelector(state => state.products);
-
-
   const index = useSelector(state => state.index);
   const handleClose = () => {
     setisOpen(false);

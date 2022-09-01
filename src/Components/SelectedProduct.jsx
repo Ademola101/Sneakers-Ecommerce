@@ -1,9 +1,20 @@
 import React from 'react';
 import { SelectedProductStyle } from '../Styles/SelectedProduct.style';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { RiDeleteBinLine } from 'react-icons/ri';
+import { removeFromCart } from '../reducers/Cart';
+
 
 export default function SelectedProduct() {
+  const dispatch = useDispatch();
   const cart = useSelector(state => state.Cart);
+  const products = useSelector(state => state.products);
+  const id = cart.name[0]?.id;
+  const product = products.find(product => product.id === id);
+  const handleRemoveCart = () => {
+    dispatch(removeFromCart());
+
+  };
   return (
     <SelectedProductStyle>
 
@@ -12,28 +23,33 @@ export default function SelectedProduct() {
       </div>
 
       <div >
-        <div className='img'>
 
-        </div>
-        <div className='cartcontent'>
-          <div>
+        <div className='container'>
+          { cart.name.length > 0 && <img src= {product?.thumbnail} alt="sneakers" />}
 
-            {cart.name.length > 0 ? (<div>
-              <div>
-                {cart.name[0].name}
-              </div>
 
-              <div>
+          <div className='cartcontent'>
+            <div>
+
+              {cart.name.length > 0 ? (<div>
+                <div>
+                  {cart.name[0].name}
+                </div>
+
+                <div>
               &#36;{125} &times; {cart.index[0]}  <span className='mulresult'> &#36;{125 * cart.index}</span>
-              </div>
-            </div>) : 'Your cart is empty'}
-          </div>
-
-        </div>
+                  < RiDeleteBinLine className='icon'/>
+                </div>
 
 
+              </div> ) : 'Your cart is empty'}
+            </div>
 
-        <div className='checkout'>Checkout</div>
+          </div></div>
+
+
+
+        { cart.name.length > 0 && <div className='checkout'>Checkout</div>}
 
 
 

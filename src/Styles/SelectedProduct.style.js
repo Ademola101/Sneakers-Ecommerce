@@ -14,6 +14,17 @@ position: relative;
 bottom: 800px;
 overflow: auto;
 
+.icon {
+  margin-left: 120px;
+
+}
+
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+}
+
 .mulresult {
   color: black;
 }
@@ -26,11 +37,29 @@ overflow: auto;
 }
 
 .cartcontent{
-  padding: 100px;
+  padding: 20px;
   color: #87727299;
   font-weight: bold;
-  font-size: 1.1em;
+  display: inline-block;
 }
+.checkout {
+    border: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:  hsl(26, 100%, 55%);
+    padding: 9px;
+    color: white;
+    font-size: small;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  img {
+    display: inline;
+    width: 50px;
+  }
 
 @media (min-width:768px) {
 
@@ -42,6 +71,7 @@ overflow: auto;
   .cartcontent{
     padding: 20px;
     font-size: 1em;
+    padding: 100px;
   }
 
   .checkout {
