@@ -14,16 +14,7 @@ position: relative;
 bottom: 800px;
 overflow: auto;
 
-.icon {
-  margin-left: 120px;
 
-}
-
-.container {
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 100%;
-}
 
 .mulresult {
   color: black;
@@ -56,11 +47,7 @@ overflow: auto;
     font-weight: 600;
   }
 
-  img {
-    display: inline;
-    width: 50px;
-  }
-
+  
 @media (min-width:768px) {
 
   left: 290px;
