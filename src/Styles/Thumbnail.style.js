@@ -12,6 +12,9 @@ display: none;
   .img {
     width: 90px;
     border-radius: 4px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   

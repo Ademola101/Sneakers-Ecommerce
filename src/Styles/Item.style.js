@@ -16,11 +16,10 @@ margin-top: 10px;
   border-radius: 10px;
   width: 400px;
   &:hover {
-    background-color: red;
+    cursor: pointer;
   }
   
 }
-width: 700px;
 flex-direction: column;
 
 }

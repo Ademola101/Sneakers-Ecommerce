@@ -21,7 +21,7 @@ margin-top: ${props => props.marginTop  };
 
 .text {
   color: hsl(220, 14%, 75%);
-  font-size: 16px;
+  font-size: small;
 }
 
 .price {
@@ -29,8 +29,9 @@ margin-top: ${props => props.marginTop  };
 }
 
 @media (min-width:768px) {
-  margin-top: 20px;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-top: 50px;
+  width: 300px;
 }
 
 `;

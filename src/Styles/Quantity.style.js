@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 export const QuantityStyle = styled.div`
 @media (min-width:768px) {
-  position: relative;
+  
     height: 20px;
-    top: 350px;
-    right: 300px;
+    width: 110px;
+    position: relative;
+    left: 150px;
+    bottom: 90px
 }
 
 display: flex;
@@ -21,11 +23,17 @@ border-radius: 10px;
 
 
 .minus {
-  width: 10%
+  width: 10%;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .plus {
-  width: 10%
+  width: 10%;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .number{
   width: 70%;

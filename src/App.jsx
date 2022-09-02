@@ -16,10 +16,11 @@ function App() {
       <CompanytemResStyle>
         <Item/>
         <Company/>
-        <Quantity/>
-        <AddCart/>
 
       </CompanytemResStyle>
+
+      <Quantity/>
+      <AddCart/>
       {showCartState && <SelectedProduct />}
     </div>
   );
