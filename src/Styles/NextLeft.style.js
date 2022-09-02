@@ -5,7 +5,7 @@ display: ${props => props.display  };
 
 position: relative;
     left: 40px;
-    bottom: 200px;
+    bottom: 120px;
     transform: translate(-50%, -50%);
     background-color: white;
     width: 40px;

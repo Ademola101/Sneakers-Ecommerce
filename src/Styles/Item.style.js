@@ -5,6 +5,11 @@ display: flex;
 flex-direction: row;
 margin-top: 10px;
 
+.image {
+  width: 100vh;
+  height: 300px;
+}
+
 
 @media (min-width:768px) {
   .image {
