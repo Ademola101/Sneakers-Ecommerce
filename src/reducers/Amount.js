@@ -11,7 +11,9 @@ const Amount = createSlice({
     },
 
     decreaseAmount: (state) => {
-      return state = state -1;
+      if (state > 0) {
+        return state = state - 1;
+      }
     },
 
     setToZero: (state) => {
