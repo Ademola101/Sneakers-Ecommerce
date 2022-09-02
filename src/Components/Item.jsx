@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ItemStyle } from '../Styles/Item.style';
 import { useSelector } from 'react-redux';
 import NextLeft from './NextLeft';
@@ -23,15 +24,21 @@ export default function Item() {
 
   return (<>
     <ItemStyle>
+      <AnimatePresence>
+        <div onClick={() => {
 
-      <div onClick={() => {
-
-        isMobbile && setisOpen(true);}
-      } >
-        <img className='image'  src={products.find(
-          product => product.id === index+1)?.img} alt="sneakers" />
-      </div>
-      <Thumbnail />
+          isMobbile && setisOpen(true);}
+        } >
+          <motion.img className='image'  src={products.find(
+            product => product.id === index+1)?.img} alt="sneakers" initial={{ opacity: 0, y: 0 }
+          }
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          key =  {products.find(
+            product => product.id === index+1)?.img}/>
+        </div>
+        <Thumbnail />
+      </AnimatePresence>
     </ItemStyle>
     <NextLeft />
     <NextRight/>
