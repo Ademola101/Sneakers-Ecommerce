@@ -13,7 +13,7 @@ flex-direction: row;
 gap: 20px;
 margin-top: 20px;
 background-color: hsl(240deg 54% 95%);
-padding: 23px;
+padding: 13px;
 width: 85%;
 margin-left: auto;
 margin-right: auto;

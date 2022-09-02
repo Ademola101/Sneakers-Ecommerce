@@ -18,10 +18,12 @@ border: none;
 
     }
 
+
+padding: 25px;
 display: flex;
 justify-content: center;
 background-color:  hsl(26, 100%, 55%);
-width: 80%;
+width: 91%;
 margin-left: auto;
 margin-right: auto;
 height: 35px;

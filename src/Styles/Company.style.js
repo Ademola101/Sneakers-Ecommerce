@@ -3,10 +3,7 @@ import styled from 'styled-components';
 export const CompanyStyle = styled.div`
 margin-left: 20px;
 margin-right: 20px;
-@media (min-width:768px) {
-margin-top: 100px;
-}
-
+margin-top: ${props => props.marginTop  };
 .header{
   font-weight: bold;
   color:  hsl(26, 100%, 55%);
@@ -33,6 +30,7 @@ margin-top: 100px;
 
 @media (min-width:768px) {
   margin-top: 20px;
+  margin-top: 100px;
 }
 
 `;

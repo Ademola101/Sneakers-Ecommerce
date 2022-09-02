@@ -6,7 +6,7 @@ display: ${props => props.display  };
     position: relative;
     width: 40px;
     bottom: 180px;
-    left: 300px;
+    left: 320px;
     background-color: white;
     border-radius: 50%;
 svg {
