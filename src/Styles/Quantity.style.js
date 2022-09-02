@@ -4,9 +4,9 @@ export const QuantityStyle = styled.div`
 @media (min-width:768px) {
   
     height: 20px;
-    width: 110px;
+    width: 90px;
     position: relative;
-    left: 150px;
+    left: 120px;
     bottom: 90px
 }
 
@@ -16,7 +16,6 @@ gap: 20px;
 margin-top: 20px;
 background-color: hsl(240deg 54% 95%);
 padding: 13px;
-width: 85%;
 margin-left: auto;
 margin-right: auto;
 border-radius: 10px;

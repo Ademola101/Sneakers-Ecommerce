@@ -4,6 +4,7 @@ export const PriceStyle = styled.div`
 
 display: flex;
 margin-top: 20px;
+
 .discount {
   font-size: 2em;
   font-weight: bold;
@@ -34,5 +35,21 @@ margin-top: 20px;
   margin-top: 10px;
   color: hsl(240deg 23% 74%);
   
+}
+
+@media (min-width:768px) {
+  .discount {
+    font-size: 1.4em;
+  }
+
+  .percent {
+    font-size: 1em;
+    margin-top: -1px;
+  }
+  .original {
+    font-size: 1em;
+    margin-top: 30px;
+    margin-left: -200px
+  }
 }
 `;

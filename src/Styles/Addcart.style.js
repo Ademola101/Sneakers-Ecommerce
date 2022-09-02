@@ -7,13 +7,16 @@ border: none;
 
 
     @media (min-width:768px) {
+      width: 220px;
     position: relative;
-    top: 350px;
-    right: 280px;
-    width: 100%;
-    min-width: 180px;
+    bottom: 156px;
+    left: 330px;
+    height: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
     &:hover {
-      background-color: brown;
+      cursor: pointer;
     }
 
     }
