@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SelectedProductStyle = styled.div`
 
 background-color: white;
-height: 300px;
+height: 250px;
 width: 345px;
 bottom: 400px;
 margin-right: auto;
@@ -11,7 +11,7 @@ margin-left: auto;
 box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 border-radius: 10px;
 position: relative;
-bottom: 800px;
+bottom: 730px;
 overflow: auto;
 
 .empty {
@@ -54,7 +54,7 @@ overflow: auto;
 @media (min-width:768px) {
 
   left: 290px;
-  bottom: 720px;
+  bottom: 620px;
   width: 270px;
   height: 220px;
 
