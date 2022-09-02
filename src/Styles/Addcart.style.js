@@ -9,7 +9,7 @@ border: none;
     @media (min-width:768px) {
       width: 220px;
     position: relative;
-    bottom: 156px;
+    bottom: 136px;
     left: 330px;
     height: 30px;
     padding-top: 22px;

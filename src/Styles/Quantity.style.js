@@ -7,9 +7,9 @@ export const QuantityStyle = styled.div`
     width: 90px;
     position: relative;
     left: 120px;
-    bottom: 90px
+    bottom: 70px
 }
-
+width: 85%;
 display: flex;
 flex-direction: row;
 gap: 20px;

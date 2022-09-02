@@ -22,6 +22,7 @@ margin-top: ${props => props.marginTop  };
 .text {
   color: hsl(220, 14%, 75%);
   font-size: small;
+  margin-top: 20px;
 }
 
 .price {
