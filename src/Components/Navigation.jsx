@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavigationStyle } from '../Styles/NavigationStyle';
-
+import { useMediaQuery } from '../Hooks';
 export default function Navigation({ showLinks, handleClose }) {
+  const isDesktop = useMediaQuery('(min-width: 768px)');
 
-  if (showLinks) {
+  if (!showLinks && !isDesktop) {
     return null;
   }
   return (

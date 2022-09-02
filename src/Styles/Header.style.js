@@ -4,6 +4,10 @@ export const HeaderStyle = styled.header`
 display: flex;
 flex-direction: row;
 margin: 0;
+
+.svg {
+  margin: 15px;
+}
 .amount {
   color: white;
   background-color: hsl(26, 100%, 55%);
@@ -28,6 +32,8 @@ margin: 0;
 
 .profile {
   width: 5vw;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .pofile > img {
@@ -35,6 +41,7 @@ margin: 0;
 }
 .cart {
   width: 10vw;
+  margin-top: 15px;
 }
 
 @media (min-width:768px) {
@@ -45,7 +52,7 @@ margin: 0;
   margin-right: auto;
   margin-bottom: 100px;
   .sneakers{
-    width: 20vw;
+    width: 15vw;
     padding-left: 0;
     font-size: 1.6em;
   }

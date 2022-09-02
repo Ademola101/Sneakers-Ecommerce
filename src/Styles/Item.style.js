@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ItemStyle = styled.div`
 display: flex;
 flex-direction: row;
+margin-top: 10px;
 
 
 @media (min-width:768px) {
