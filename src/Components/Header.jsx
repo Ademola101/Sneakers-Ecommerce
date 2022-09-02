@@ -24,7 +24,7 @@ export default function Header() {
       <div className='sneakers'><strong>sneakers</strong> </div>
 
 
-      <Navigation showLinks={showLinks}/>
+      <Navigation showLinks={showLinks} handleClose = {handleShowLinks}/>
 
 
       <div className='cart'>

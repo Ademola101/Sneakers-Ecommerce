@@ -9,6 +9,9 @@ export const NavigationStyle = styled.nav`
   gap: 20px;
   width: 60%;
   height: auto;
+  .close {
+    display: none;
+  }
   a {
     text-decoration: none;
     color: hsl(220, 14%, 75%);
@@ -25,10 +28,16 @@ z-index: 1;
 position: fixed;
 background-color: white;
 height: 100vh;
+width: 65vw;
 a {
 
   text-decoration: none;
   
+}
+
+
+.close {
+  margin-bottom: 50px;
 }
 
 
