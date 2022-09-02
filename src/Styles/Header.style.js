@@ -7,6 +7,7 @@ margin: 0;
 
 .svg {
   margin: 15px;
+  cursor: pointer;
 }
 .amount {
   color: white;
@@ -36,12 +37,13 @@ margin: 0;
   margin-bottom: 10px;
 }
 
-.pofile > img {
+.profile > img {
   width: 30px;
 }
 .cart {
   width: 10vw;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 @media (min-width:768px) {

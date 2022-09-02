@@ -36,6 +36,7 @@ a {
 @media (min-width:768px) {
   position: static;
   margin-top: 10px;
+  
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -53,7 +54,7 @@ a {
     text-shadow: 0 0 1px hsl(220, 14%, 75%);
     font-weight: normal;
     margin-left: 10px;
-
+    margin-bottom: 0;
 
     &:hover {
     color: hsl(219, 9%, 45%);
