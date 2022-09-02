@@ -6,13 +6,14 @@ display: ${props => props.display  };
     position: relative;
     width: 40px;
     bottom: 180px;
-    left: 320px;
+    left: 310px;
     background-color: white;
     border-radius: 50%;
 svg {
   position: relative;
     top: 10px;
     left: 14px;
+    cursor: pointer;
 
 }
 

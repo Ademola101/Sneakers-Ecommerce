@@ -17,6 +17,7 @@ svg {
     left: 10px;
     position: relative;
     top: 8px;
+    cursor: pointer;
 }
 
 

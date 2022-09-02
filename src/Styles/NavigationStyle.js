@@ -30,6 +30,7 @@ a {
   margin-left: 30px;
   margin-top: 30px;
   width: 20px;
+  cursor: pointer;
   
 }
 

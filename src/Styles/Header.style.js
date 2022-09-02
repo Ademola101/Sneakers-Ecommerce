@@ -21,7 +21,7 @@ margin: 0;
   border-radius: 50%;
 }
 .sneakers {
-  width: 65vw;
+  width: 55vw;
   font-size: 2em;
   display: flex;
   justify-content: left;
@@ -35,6 +35,7 @@ margin: 0;
   width: 5vw;
   margin-top: 15px;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .profile > img {
