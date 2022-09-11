@@ -34,17 +34,26 @@ export default function Item() {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        style={{
+          outline: '0',
+        }}
       >
+        <div>
 
 
-        <Box >
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-      Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-      Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
+          <img style = {{
+            width: '400px',
+            marginRight: 'auto',
+            marginLeft: 'auto',
+            marginTop: '70px',
+            display: 'flex',
+            outline: '0',
+          }} src={products[index]?.img} alt="sneakers" />
+
+          <Thumbnail />
+        </div>
+
+
       </Modal>
       <AnimatePresence>
         <motion.img className='image' key={index} src={products[index].img} alt={products[index].title}

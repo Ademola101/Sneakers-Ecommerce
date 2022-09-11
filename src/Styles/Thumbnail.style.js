@@ -8,6 +8,7 @@ display: none;
   flex-direction: row;
   gap: 10px;
   width: 400px;
+  margin: auto;
 
   .img {
     width: 90px;
