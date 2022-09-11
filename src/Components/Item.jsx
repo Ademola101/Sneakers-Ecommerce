@@ -27,8 +27,6 @@ export default function Item() {
   return (<div>
     <ItemStyle>
 
-      <NextLeft />
-      <NextRight/>
 
 
       <Modal
@@ -55,6 +53,9 @@ export default function Item() {
 
       </AnimatePresence>
     </ItemStyle>
+    <NextLeft />
+    <NextRight/>
+
   </div>
   );
 }
