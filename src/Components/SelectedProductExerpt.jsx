@@ -23,7 +23,7 @@ export default function SelectedProductExerpt({ product, deleteCart }) {
 
       <div className='icon'>
 
-        <RiDeleteBinLine onClick={deleteCart}/>
+        <RiDeleteBinLine className='delete' onClick={deleteCart}/>
 
 
       </div>
