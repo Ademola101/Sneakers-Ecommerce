@@ -4,6 +4,7 @@ import Cart from './reducers/Cart';
 import Amount from './reducers/Amount';
 import ProductIndex from './reducers/ProductIndex';
 import ProudctReducer from './reducers/ProductSlice';
+import Notification from './reducers/Notification';
 
 
 
@@ -15,6 +16,7 @@ export const store = configureStore({
     products: ProudctReducer,
     index: ProductIndex,
     showCart: ShowCart,
+    Notification: Notification
 
 
 
