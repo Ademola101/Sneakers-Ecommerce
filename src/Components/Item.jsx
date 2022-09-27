@@ -35,7 +35,7 @@ export default function Item() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           key =  {products.find(
-            product => product.id === index+1)?.img}/>
+            product => product.id === index+1).id}/>
         </div>
         <Thumbnail />
       </AnimatePresence>

@@ -1,12 +1,12 @@
-import { createSlice, nanoid } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 const CartSlice = createSlice({
   initialState: [],
   name: 'cart',
   reducers: {
 
-    addToCart: (state, { payload:{ product, amount } }) => {
-      const productAmount = { ...product, amount };
+    addToCart: (state, { payload:{ id, product, amount } }) => {
+      const productAmount = { id, product, amount };
       return [...state, productAmount];
 
     },
@@ -18,9 +18,7 @@ const CartSlice = createSlice({
 
     },
 
-    prepare(product, amount) {
-      return { payload: { id: nanoid(), product, amount } };
-    }
+
 
 
   }
