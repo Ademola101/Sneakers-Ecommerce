@@ -5,6 +5,7 @@ import { CompanytemResStyle } from './Styles/CompanyItemRes.style';
 import Quantity from './Components/Quantity';
 import AddCart from './Components/AddCart';
 import SelectedProduct from './Components/SelectedProduct';
+import Notification from './Components/Notification';
 import { useSelector } from 'react-redux';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   return (
     <div>
       <Header />
-
+      <Notification/>
       <CompanytemResStyle>
         <Item/>
         <Company/>
@@ -21,6 +22,7 @@ function App() {
 
       <Quantity/>
       <AddCart/>
+
       {showCartState && <SelectedProduct />}
     </div>
   );

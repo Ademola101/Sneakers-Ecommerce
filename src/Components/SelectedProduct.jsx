@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { SelectedProductStyle } from '../Styles/SelectedProduct.style';
 import { useSelector, useDispatch } from 'react-redux';
 import SelectedProductExerpt from './SelectedProductExerpt';
 import { removeFromCart } from '../reducers/Cart';
 
 export default function SelectedProduct() {
-
+  const id  = useId();
 
   const dispatch = useDispatch();
   const Cart = useSelector(state => state.Cart);
@@ -24,7 +24,7 @@ export default function SelectedProduct() {
 
 
       { Cart.length > 0 && ( <>
-        {Cart.map(product => <SelectedProductExerpt key={product.id} product={product}
+        {Cart.map(product => <SelectedProductExerpt key={id} product={product}
           deleteCart={() => handleDelete(product.id)}  />
 
 

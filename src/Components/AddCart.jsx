@@ -3,6 +3,7 @@ import { AddCartStyle } from '../Styles/Addcart.style';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../reducers/Cart';
 import { setToZero } from '../reducers/Amount';
+import { createNotification } from '../reducers/Notification';
 const AddCart = () => {
   const dispatch = useDispatch();
   const index = useSelector(state => state.index);
@@ -13,6 +14,7 @@ const AddCart = () => {
     if (amount > 0) {
       dispatch(addToCart({  product, amount }));
       dispatch(setToZero());
+      dispatch(createNotification(`${amount} of ${product.name} added to the cart`));
     }
 
   };
