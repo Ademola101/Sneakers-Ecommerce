@@ -24,20 +24,18 @@ export default function Item() {
 
   return (<>
     <ItemStyle>
-      <AnimatePresence>
+      <AnimatePresence >
         <div onClick={() => {
 
           isMobbile && setisOpen(true);}
         } >
-          <motion.img className='image'  src={products.find(
-            product => product.id === index+1)?.img} alt="sneakers" initial={{ opacity: 0, y: 0 }
+          <motion.img className='image'  src={products[index].img} alt="sneakers" initial={{ opacity: 0, y: 0 }
           }
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          key =  {products.find(
-            product => product.id === index+1).id}/>
+          key =  {products[index].id}/>
         </div>
-        <Thumbnail />
+        <Thumbnail key={products[index].id}  />
       </AnimatePresence>
     </ItemStyle>
     <NextLeft />
