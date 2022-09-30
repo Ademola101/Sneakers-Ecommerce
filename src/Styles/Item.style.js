@@ -20,6 +20,10 @@ margin-top: 10px;
   }
   
 }
+
+.svg {
+  position: relative;
+}
 flex-direction: column;
 
 }

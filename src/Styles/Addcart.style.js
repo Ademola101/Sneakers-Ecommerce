@@ -17,6 +17,7 @@ border: none;
 
     &:hover {
       cursor: pointer;
+      background-color: #f0c14b;
     }
 
     }
