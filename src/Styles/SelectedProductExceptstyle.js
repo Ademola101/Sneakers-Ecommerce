@@ -13,7 +13,9 @@ margin-top: 20px;
 
 
 
-
+.delete {
+  cursor: pointer;
+}
 
 img {
     display: inline;

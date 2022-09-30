@@ -24,7 +24,7 @@ export default function SelectedProduct() {
 
 
       { Cart.length > 0 && ( <>
-        {Cart.map(product => <SelectedProductExerpt key={product.id} product={product}
+        {Cart.map((product, i) => <SelectedProductExerpt key={i} product={product}
           deleteCart={() => handleDelete(product.id)}  />
 
 

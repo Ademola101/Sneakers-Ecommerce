@@ -33,6 +33,10 @@ margin-top: ${props => props.marginTop  };
   margin-top: 50px;
   margin-top: 50px;
   width: 300px;
+
+  .fall {
+    margin-top: 10px;
+  }
 }
 
 `;

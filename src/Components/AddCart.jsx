@@ -3,7 +3,10 @@ import { AddCartStyle } from '../Styles/Addcart.style';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../reducers/Cart';
 import { setToZero } from '../reducers/Amount';
+import { createNotification } from '../reducers/Notification';
+import { nanoid } from '@reduxjs/toolkit';
 const AddCart = () => {
+  const id  = nanoid();
   const dispatch = useDispatch();
   const index = useSelector(state => state.index);
   const amount = useSelector(state => state.Amount);
@@ -11,8 +14,9 @@ const AddCart = () => {
   const handleAddToCart = () => {
 
     if (amount > 0) {
-      dispatch(addToCart({  product, amount }));
+      dispatch(addToCart({ id: id,  product, amount }));
       dispatch(setToZero());
+      dispatch(createNotification(`${amount} of ${product.name} added to the cart`));
     }
 
   };

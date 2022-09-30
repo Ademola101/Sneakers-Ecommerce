@@ -16,7 +16,7 @@ export default function Thumbnail() {
 
   return (
     <ThumbnailStyle>
-      {products.map(product => <img onClick={() => handleShowPicture(product.id)} className='img'
+      {products.map((product) => <img onClick={() => handleShowPicture(product.id)} className='img'
         src={product.thumbnail} key = {product.id} alt="sneakers" />)}
     </ThumbnailStyle>
   );
