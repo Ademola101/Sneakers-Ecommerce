@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NextStyleLeft = styled.div`
-display: ${props => props.display  };
+display: ${props => props.display};  
 
 position: relative;
     left: 40px;
@@ -20,5 +20,8 @@ svg {
     cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  /* display: none; */
+}
 
 `;

@@ -6,16 +6,20 @@ display: none;
 @media (min-width:768px) {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 30px;
   width: 400px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+
 
   .img {
-    width: 90px;
+    width: 75px;
     border-radius: 4px;
     &:hover {
       cursor: pointer;
     }
+
   }
 
   
