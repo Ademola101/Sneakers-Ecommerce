@@ -1,0 +1,36 @@
+.left {
+  background-color: aliceblue;
+  z-index: 100;
+  position: relative;
+  bottom: 320px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.right {
+  background-color: aliceblue;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 350px;
+    left: 380px
+
+}
+
+.svg {
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
